@@ -59,7 +59,7 @@
                 <select class="form-select form-select-sm mb-3" aria-label=".form-select-lg example" id="id_catprov" placeholder="Escribe un proveedor" name="id_catprov">
                     <option selected>Elige un proveedor</option>
                     <%
-                        List<Proveedor>proveedorLit = new ProveedorHelper( ).getList( );
+                        List<Proveedor>proveedorList = new ProveedorHelper( ).getList( );
                         if( proveedorList != null && proveedorList.size() > 0 )
                         {
                            for( Proveedor proveedor : proveedorList )
